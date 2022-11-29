@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OpenList"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/hinh1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:padding="10dp"
+        android:layout_marginTop="250dp"/>
+
+    <TextView
+        android:id="@+id/ten1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/hinh1"
+        android:text="Tên"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:paddingTop="250dp"/>
+
+    <TextView
+        android:id="@+id/ten2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ten1"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/hinh1"
+        android:text="Mô tả"
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+    <EditText
+        android:id="@+id/nhap"
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+android:layout_below="@id/ten2"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+
+        android:hint="Mật khẩu"
+        android:inputType="textPassword"
+        android:padding="20dp"
+        android:textAlignment="textStart"
+
+        android:textColorHint="#99FFFFFF"
+        android:drawableLeft="@drawable/ic_baseline_lock_open_24"
+        />
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thêm ví dụ"
+        android:layout_marginTop="200dp"
+android:layout_centerHorizontal="true"
+android:layout_below="@id/ten2"
+        />
+</RelativeLayout>

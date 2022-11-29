@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Page"
-    android:background="@color/white">
+    android:background="@drawable/bg">
 
     <FrameLayout
         android:id="@+id/frame"

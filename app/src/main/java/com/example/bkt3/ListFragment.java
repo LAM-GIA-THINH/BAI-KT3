@@ -70,9 +70,13 @@ public class ListFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_list, container, false);
         lvBook = (ListView) view.findViewById(R.id.listViewBook);
         arrayLanguage = new ArrayList<>();
-        arrayLanguage.add(new Language("Tiếng Anh","English",R.drawable.caculator));
-
-
+        arrayLanguage.add(new Language("Tiếng Anh","nice to meet you",R.color.white));
+        arrayLanguage.add(new Language("Tiếng Hàn","만나서 반갑습니다",R.color.white));
+        arrayLanguage.add(new Language("Tiếng Việt","rất vui được gặp bạn",R.color.white));
+        arrayLanguage.add(new Language("Tiếng Hà Lan","Aangenaam",R.color.white));
+        arrayLanguage.add(new Language("Tiếng Mã Lai","selamat berkenalan",R.color.white));
+        arrayLanguage.add(new Language("Tiếng Đức","freut mich, Sie kennenzulernen",R.color.white));
+        arrayLanguage.add(new Language("Tiếng Nga","рад встрече",R.color.white));
         adapter = new Language_adapter( getActivity(),R.layout.book, arrayLanguage);
         lvBook.setAdapter(adapter);
         lvBook.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -82,6 +86,7 @@ public class ListFragment extends Fragment {
                 intent.putExtra("Tên", arrayLanguage.get(i).getTen());
                 intent.putExtra("Mô tả", arrayLanguage.get(i).getMoTa());
                 intent.putExtra("Hinh", arrayLanguage.get(i).getHinh());
+
                 startActivity(intent);
 
 
